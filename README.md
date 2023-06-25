@@ -156,6 +156,7 @@ echo 415-444-5599 | grep '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9
 echo 41-444-5599 | grep '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}'
 
 #Can also use regex with other tools:
+ls | grep -Eh 'phone|fruit'
 
 grep -EH 'Avanti|Samsung' amazon_reviews_appliances_5k_with_sentiment.txt | wc -l
 
